@@ -1,30 +1,28 @@
 body {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
-#images {
-    margin-top: 10%;
-    margin-left: -2%;
-    text-align: center;
-
+.center-offset {
+  margin-top: 10%;
+  text-align: center;
 }
 
-#documents {
-    margin-top: 15%;
-    margin-left: 17.5%;
-    text-align: left;
+.left-inside {
+  display: inline-block;
+  text-align: left;
 }
 
-/* Filter needed for IE8 and earlier */
-/* Borrowed from: http://www.w3schools.com/css/css_image_transparency.asp */
+#column-one, #column-two {
+  width: 50%;
+  float: left;
+}
+
 img {
-    opacity: 0.4;
-    border-radius: 5px;
-    border: 2px solid black;
-    filter: alpha(opacity=40); 
+  opacity: 0.4;
+  border-radius: 5px;
+  border: 2px solid black;
 }
 
 img:hover {
-    opacity: 1.0;
-    filter: alpha(opacity=100);
+  opacity: 1.0;
 }
